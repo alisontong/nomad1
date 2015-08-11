@@ -35,7 +35,7 @@ class PostsController < ApplicationController
     id = params[:id]
     post = User.post.find(id)
     post.destroy
-    redirect_to profile_path
+    redirect_to user_path(current_user)
   end 
 
   def edit
