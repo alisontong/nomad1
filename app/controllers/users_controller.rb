@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def new
     if current_user
-      redirect_to profile_path
+      redirect_to user_path(current_user)
     else
       @user = User.new
       render :new
@@ -10,12 +10,12 @@ class UsersController < ApplicationController
 
   def create
     if current_user
-      redirect_to profile_path
+      redirect_to user_path(current_user)
     else
       user = User.new(user_params)
       if user.save
         session[:user_id] = user.id
-        redirect_to profile_path
+        redirect_to user_path(current_user)
       else
         redirect_to signup_path
       end
@@ -23,8 +23,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    id = user_params[:id]
-    user = User.find(id)
+    user = User.find(params[:id])
     render :show
   end
 
@@ -38,7 +37,7 @@ class UsersController < ApplicationController
     id = user_params[:id]
     user = User.find(id)
     user.update_attributes(user_params)
-    redirect_to profile_path
+    redirect_to user_path(current_user)
   end
 
   private 

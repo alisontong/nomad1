@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def new
     # redirect user if already logged in
     if current_user
-      redirect_to profile_path
+      redirect_to user_path(current_user)
       flash[:notice] = "You logged in!"
     else
       render :new
@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
       # when they navigate around our site
       session[:user_id] = user.id
       flash[:notice] = "Successfully logged in."
-      redirect_to profile_path
+      redirect_to user_path(current_user)
     else
       # if user's login doesn't work, send them back to the login form
       flash[:error] = "Incorrect email or password. Please try again."
