@@ -1,17 +1,34 @@
-<h1>Profile Page</h1>
-<div>
-  <p><%= current_user.name %> </p>
-  <p><%= current_user.email %> </p>
-  <p><%= current_user.city %> </p>
-  <p><%= current_user.created_at %> </p>
-</div>
-<h3>My Posts</h3>
-<%= current_user.posts %> 
 
-
+<!-- PROFILE HEADER-->
+<div class="col-md-12">
+ <h1> <%= current_user.name %>'s page</h1>
 </div>
 
- 
+
+<!-- USER INFO -->
+<div class="col-md-4">
+
+  <div id ="userinformation">
+  <h3>my information</h3>
+
+    <span class="glyphicon glyphicon-pencil edit"></span>
+    <p>username: <%= current_user.name %> </p>
+    <p>current city: <%= current_user.city %> </p>
+    <p>data joined: <%= current_user.created_at %> </p>
+  </div>
+
+</div>
+
+<!-- USER POSTS -->
+ <div class="col-md-8">
+  
+  <h3>my posts</h3>
+  <%= current_user.posts %> 
+
+
+</div>
+
+
 
 
 

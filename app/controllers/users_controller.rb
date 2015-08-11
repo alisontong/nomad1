@@ -23,7 +23,22 @@ class UsersController < ApplicationController
   end
 
   def show
+    id = user_params[:id]
+    user = User.find(id)
     render :show
+  end
+
+  def edit 
+    id = user_params[:id]
+    user = User.find(id)
+    render :edit
+  end
+
+  def update
+    id = user_params[:id]
+    user = User.find(id)
+    user.update_attributes(user_params)
+    redirect_to profile_path
   end
 
   private 
