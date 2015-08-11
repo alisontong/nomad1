@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     else
       user = User.new(user_params)
       if user.save
-        session[:user_id] == user.id
+        session[:user_id] = user.id
         redirect_to profile_path
       else
         redirect_to signup_path
@@ -23,7 +23,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @current_user = User.find(session[:user_id])
     render :show
   end
 
