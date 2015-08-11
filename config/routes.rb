@@ -12,9 +12,9 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:create]
 
-  resources :users, only: [:create] do
-    resources :posts
-  end
+  resources :users, only: [:create] 
+  resources :posts
+  
 
   resources :cities, only: [:show]
 

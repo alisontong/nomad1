@@ -1,18 +1,16 @@
-<%= form_for @user, :url => users_path, :html => { :multipart => true } do |form| %>
- 
-<%= form_for @user do |f| %>
+
+<h1>New Post</h1>
+<%= form_for @post do |f| %>
   <%= f.label :title %>:
-   <%= f.text_field :body, class:"form-control", required: true %><br />
-   <%= f.label :body %>:
-   <%= f.text_field :body, class:"form-control", required: true %><br />
+     <%= f.text_field :title, class:"form-control", required: true %><br />
+     <%= f.label :descripton %>:
+     <%= f.text_field :description, class:"form-control", required: true %><br />
 
-   <%= f.label :avatar %>
-   <%= form.file_field :avatar, class:"form-control", required: true %>
- 
-   <%= f.select :city, [['Oakland', 1], ['San Francisco', 2], ['Berkeley', 3], ['Marin'] %>
+   <%= f.label :city_id %>
+   <%= f.select :city_id, [['Oakland', 1], ['San Francisco', 1], ['Berkeley', 3], ['Marin', 4]] %>
 
-   <%= f.submit "Save User", class:"btn btn-primary" %>
+   <%= f.submit "Save Post", class:"btn btn-primary" %>
 <% end %>
 
 
-<% end %>
+
