@@ -1,2 +1,18 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+<%= form_for @user, :url => users_path, :html => { :multipart => true } do |form| %>
+ 
+<%= form_for @user do |f| %>
+  <%= f.label :title %>:
+   <%= f.text_field :body, class:"form-control", required: true %><br />
+   <%= f.label :body %>:
+   <%= f.text_field :body, class:"form-control", required: true %><br />
+
+   <%= f.label :avatar %>
+   <%= form.file_field :avatar, class:"form-control", required: true %>
+ 
+   <%= f.select :city, [['Oakland', 1], ['San Francisco', 2], ['Berkeley', 3], ['Marin'] %>
+
+   <%= f.submit "Save User", class:"btn btn-primary" %>
+<% end %>
+
+
+<% end %>
