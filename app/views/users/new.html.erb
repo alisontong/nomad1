@@ -1,5 +1,5 @@
 <div class="col-sm-4 col-sm-offset-4">
-  <legend>Create a new user!</legend>
+  <legend>sign up to post about travels!</legend>
   <%= form_for @user do |f| %>
     <%= f.label :name %>:
      <%= f.text_field :name, class:"form-control", required: true %><br />
@@ -10,8 +10,8 @@
      <%= f.text_field :password, class:"form-control", required: true %><br />
      <%= f.label :city %> 
      <%= f.text_field :city, class:"form-control", required: true %><br> 
-     <%= f.submit "Save User", class:"btn btn-primary" %>
+     <%= f.submit "become a member!", class:"btn btn-primary" %>
   <% end %>
   <br>
-  <p>Already have an account? <%= link_to "Click here", login_path%> to log in.</p>
+  <p>already have an account? <%= link_to "click here", login_path%> to log in.</p>
 </div>
