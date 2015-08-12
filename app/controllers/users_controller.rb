@@ -48,4 +48,9 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password, :city)
     end
 
+    def page_user
+      @page_user = User.find(params[:id])
+    end
+    helper_method :page_user
+
 end

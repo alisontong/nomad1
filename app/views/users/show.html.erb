@@ -13,7 +13,11 @@
   <div id ="userinformation">
   <h3>my information</h3>
 
+  <% if current_user == page_user %>
+
     <p><%= link_to "Edit User Profile", edit_user_path(@user) %></p>
+  <% end %>
+
     <p>username: <%= @user.name %> </p>
     <p>current city: <%= @user.city %> </p>
     <p>data joined: <%= @user.created_at %> </p>
