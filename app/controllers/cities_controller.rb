@@ -5,6 +5,6 @@ class CitiesController < ApplicationController
   
   def show
     @city = City.find(params[:id])
-    @posts = Post.find_by(city[:id])
+    @posts = Post.find_by_id(@city.id)
   end
 end
