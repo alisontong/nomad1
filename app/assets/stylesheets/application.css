@@ -35,11 +35,12 @@ html {
 
 #userinformation {
   font-family: sans-serif;
-  background-color: #F2F2F2;
   color: black;
   margin-bottom: 30px;
 }
 
-.col-sm-4 col-sm-offset-4 {
-  text-align: center;
+/*USER PROFILE TITLE NAME
+*/body > div.col-md-12 > h1 {
+  background-color: none;
+  color:black;
 }
