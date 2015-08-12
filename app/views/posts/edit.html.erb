@@ -1,0 +1,13 @@
+<h1>Update Post</h1>
+<%= form_for @post do |f| %>
+  <%= f.label :title %>:
+     <%= f.text_field :title, class:"form-control", required: true %><br />
+     <%= f.label :descripton %>:
+     <%= f.text_field :description, class:"form-control", required: true %><br />
+
+   <%= f.label :city_id %>
+    <%= f.text_field :city_id, class:"form-control", required: true %><br />
+   
+
+   <%= f.submit "Save Post", class:"btn btn-primary" %>
+<% end %>
