@@ -32,6 +32,7 @@ class PostsController < ApplicationController
 
 
   def edit
+    
     @post = Post.find(params[:id])
     if current_user.posts.include? @post
       render :edit
@@ -65,11 +66,6 @@ class PostsController < ApplicationController
  
 
   private
-
-    # def set_post
-    #   @post = Post.friendly.find(params[:id])
-    # end
-    
     def post_params
       params.require(:post).permit(:title, :description, :city_id)
     end
