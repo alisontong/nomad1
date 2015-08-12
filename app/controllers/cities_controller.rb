@@ -4,7 +4,9 @@ class CitiesController < ApplicationController
   end
   
   def show
+    # Finds the current city id
     @city = City.find(params[:id])
-    @posts = Post.find_by(city[:id])
+    # Find all posts with same city id
+    @posts = Post.find_by(@city.id)
   end
 end
