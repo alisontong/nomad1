@@ -6,7 +6,7 @@
      <%= f.text_field :description, class:"form-control", required: true %><br />
 
    <%= f.label :city_id %>
-    <%= f.text_field :city_id, class:"form-control", required: true %><br />
+     <%= f.select :city_id, [['Oakland', 1], ['San Francisco', 1], ['Berkeley', 3], ['Marin', 4]] %>
    
 
    <%= f.submit "Save Post", class:"btn btn-primary" %>

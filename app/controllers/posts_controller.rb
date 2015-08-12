@@ -32,6 +32,7 @@ class PostsController < ApplicationController
 
 
   def edit
+    
     @post = Post.find(params[:id])
     if current_user.posts.include? @post
       render :edit
