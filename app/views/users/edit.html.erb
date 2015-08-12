@@ -1,0 +1,14 @@
+<h1>Update your profile</h1>
+  <%= form_for @user do |f| %>
+    <%= f.label :name %>:
+     <%= f.text_field :name, class:"form-control", required: true %><br />
+     <%= f.label :email %>:
+     <%= f.email_field :email, class:"form-control", required: true %><br />
+
+     <%= f.label :password %>:
+     <%= f.password_field :password, class:"form-control", required: true %><br />
+     <%= f.label :city %> 
+     <%= f.text_field :city, class:"form-control", required: true %><br> 
+     <hr>
+<%= f.submit "Save User Info" %>
+<% end %>

@@ -28,16 +28,13 @@ class UsersController < ApplicationController
   end
 
   def edit 
-    id = user_params[:id]
-    user = User.find(id)
+    id = params[:id]
+    @user = User.find(id)
     render :edit
   end
 
   def update
-    id = user_params[:id]
-    user = User.find(id)
-    user.update_attributes(user_params)
-
+    current_user.update_attributes(user_params)
     redirect_to user_path(current_user)
   end
 
