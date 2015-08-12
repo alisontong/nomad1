@@ -37,6 +37,7 @@ class UsersController < ApplicationController
     id = user_params[:id]
     user = User.find(id)
     user.update_attributes(user_params)
+
     redirect_to user_path(current_user)
   end
 
