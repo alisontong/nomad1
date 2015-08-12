@@ -7,7 +7,7 @@
      <%= f.text_field :description, class:"form-control", required: true %><br />
 
    <%= f.label :city_id %>
-     <%= f.select :city_id, [['Oakland', 1], ['San Francisco', 1], ['Berkeley', 3], ['Marin', 4]] %>
+     <%= f.select :city_id, options_from_collection_for_select(City.all, "id", "name") %>
    
 
    <%= f.submit "update post", class:"btn btn-primary" %>
