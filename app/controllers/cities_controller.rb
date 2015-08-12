@@ -1,6 +1,6 @@
 class CitiesController < ApplicationController
   def index
-    @cities = City.find(:all)
+    @cities = City.all
   end
   
   def show
