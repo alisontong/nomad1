@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # Amazon Web Services
 gem 'aws-sdk'
 
+# Friendly id for urls
+gem 'friendly_id'
+
 # Paper clip for pictures
 gem 'paperclip', '~> 4.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
