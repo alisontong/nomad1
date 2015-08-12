@@ -11,7 +11,7 @@
   <div id ="userinformation">
   <h3>my information</h3>
 
-    <span class="glyphicon glyphicon-pencil edit"></span>
+    <p><%= link_to "Edit User Profile", edit_user_path(@user) %></p>
     <p>username: <%= @user.name %> </p>
     <p>current city: <%= @user.city %> </p>
     <p>data joined: <%= @user.created_at %> </p>
@@ -23,8 +23,14 @@
  <div class="col-md-8">
   
   <h3>my posts</h3>
-  <%= @user.posts %> 
-
+  <% @user.posts.each do |post| %>
+    <p>
+    	<%= post.title %> - <%= post.description %> <%= link_to "View Posts", post_path(post) %>
+    </p>
+  <% end %>
+ 
+ 
+<p><%= link_to "Add new post", new_post_path(@post) %></p>
 
 </div>
 
