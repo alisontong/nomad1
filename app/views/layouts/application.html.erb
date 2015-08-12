@@ -20,24 +20,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">nomad</a>
+
+      <a class="navbar-brand" href="/"> <img style="max-width:50px; margin-top: -7px;"
+             src="http://timolwell.com/images/branding/nomad_logo.jpg"></a>
+        
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% if current_user %> 
-          <li class="active">
-            <%= link_to "profile", user_path(current_user) %> 
-          </li>  
+          <li class="active"><a href="/profile">profile</a></li>
         <% end %> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if current_user %>
-          <li><%= link_to "logout", logout_path %> </li>
+          <li><a href="/logout">log out</a></li>
         <% else %> 
-          <li><%= link_to "login", login_path %> </li>
-          <li><%= link_to "signup", signup_path %> </li>
+          <li><a href="/login">log in</a></li>
+          <li><a href="/signup">sign up</a></li>
         <% end %> 
       </ul>
     </div><!-- /.navbar-collapse -->
