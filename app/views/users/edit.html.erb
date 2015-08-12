@@ -7,8 +7,9 @@
 
      <%= f.label :password %>:
      <%= f.password_field :password, class:"form-control", required: true %><br />
-     <%= f.label :city %> 
-      <%= f.select :city_id, [['Oakland', 1], ['San Francisco', 1], ['Berkeley', 3], ['Marin', 4]] %>
+    <%= f.label :city %> 
+     <%= f.text_field :city, class:"form-control", required: true %><br> 
+      
      <hr>
 <%= f.submit "Save User Info" %>
 <% end %>

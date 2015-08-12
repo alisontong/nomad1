@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+body > div {
+  font-family: sans-serif;
+  background-color: rgba(42, 30, 20, 0.6);
+  color: #F2F2F2;
+  margin-bottom: 30px;
+}
+
+body > div > legend {
+  color: #F2F2F2;
+}
+
+html { 
+  background: url(https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#userinformation {
+  font-family: sans-serif;
+  background-color: #F2F2F2;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.col-sm-4 col-sm-offset-4 {
+  text-align: center;
+}
