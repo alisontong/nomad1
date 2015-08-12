@@ -1,6 +1,6 @@
 <div>
 
-  <%= image_tag @city.image, size: "200x200" %>
+  <%= image_tag @city.image, size: "1000x200" %>
   <h1><%= @city.name %> </h1>
 </div>
 <h3>Posts about <%= @city.name %></h3>
@@ -12,10 +12,11 @@
     <div class="col-md-3">
     </div>
     <div class="col-md-6">
-      <%= p.title %>
+      Author: <%= p.user.name %>
+      <br>
+      Title: <%= p.title %>
       <br>
       <%= p.description %>
     </div>
   </div>
-<% end %>
-<% end %>
+  <% end  %>

@@ -6,14 +6,10 @@ class CitiesController < ApplicationController
   def show
     # Finds the current city id
     @city = City.find(params[:id])
-
-
     # Find all posts with same city id
 
 
   end
-
-  private
 
 
 end
