@@ -3,6 +3,9 @@ class User < ActiveRecord::Base
 
   has_secure_password
 
+  extend FriendlyId
+  friendly_id :username, use: :slugged
+
   # :styles => { :medium => "150x150>", :thumb => "44x44#>" },
   #              :storage => :s3,
   #              :s3_credentials => Proc.new { |a| a.instance.s3_credentials },

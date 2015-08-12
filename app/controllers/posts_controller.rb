@@ -26,30 +26,44 @@ class PostsController < ApplicationController
   end
 
   def show
-    id = params[:id]
-    post = Post.find(id)
+    @post = Post.find(params[:id])
     render :show
-  end
-
-  def delete
-    id = params[:id]
-    post = User.post.find(id)
-    post.destroy
-    redirect_to user_path(current_user)
   end 
 
+
   def edit
-    id = params[:id]
-    post = User.post.find(id)
-    render :edit
+    
+    @post = Post.find(params[:id])
+    if current_user.posts.include? @post
+      render :edit
+    else
+      redirect_to profile_path
+    end
   end
 
   def update
-    id = params[:id]
-    post = User.post.find(id)
-    post.update_attributes(post_params)
-    redirect_to user_post_path
+    post = Post.find(params[:id])
+    if current_user.posts.include? post
+      post.update_attributes(post_params)
+      redirect_to post_path(post)
+    else
+      redirect_to post_path
+    end
   end
+
+  def destroy
+    post = Post.find(params[:id])
+    if current_user.posts.include? post
+      post.destroy
+
+
+      redirect_to user_path(current_user)
+    else
+      redirect_to user_path(current_user)
+    end
+  end
+
+ 
 
   private
     def post_params

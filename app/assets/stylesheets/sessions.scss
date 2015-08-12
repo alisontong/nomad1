@@ -1,3 +1,30 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body > div {
+  font-family: sans-serif;
+  background-color: rgba(42, 30, 20, 0.6);
+  color: #F2F2F2;
+  margin-bottom: 30px;
+}
+
+body > div > legend {
+  color: #F2F2F2;
+}
+
+html { 
+  background: url(https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#userinformation {
+  font-family: sans-serif;
+  background-color: rgba(42, 30, 20, 0.6);
+  color: black;
+  margin-bottom: 30px;
+}

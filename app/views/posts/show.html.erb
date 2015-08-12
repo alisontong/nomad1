@@ -1,2 +1,14 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1><%= @post.title %></h1>
+<hr>
+<p><%= @post.description %></p>
+
+<p><%= @post.city_id %></p>
+
+<% if current_user && current_user.posts.include?(@post) %>
+  <p><%= link_to "Edit Post", edit_post_path(@post) %></p>
+  <p><%= link_to "Delete", post_path, method: :delete %></p>
+  
+
+<% end %>
+   
+
