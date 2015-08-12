@@ -1,4 +1,5 @@
-<h1>Update Post</h1>
+<div class="col-sm-4 col-sm-offset-4">
+<h1>update post</h1>
 <%= form_for @post do |f| %>
   <%= f.label :title %>:
      <%= f.text_field :title, class:"form-control", required: true %><br />
@@ -9,5 +10,6 @@
      <%= f.select :city_id, options_from_collection_for_select(City.all, "id", "name") %>
    
 
-   <%= f.submit "Save Post", class:"btn btn-primary" %>
+   <%= f.submit "update post", class:"btn btn-primary" %>
 <% end %>
+</div>
