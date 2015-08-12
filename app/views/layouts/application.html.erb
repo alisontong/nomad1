@@ -5,8 +5,8 @@
     <!-- latest compiled and minified Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <title>nomad</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+ 
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -32,7 +32,26 @@
       <ul class="nav navbar-nav">
         <% if current_user %> 
           <li class="active"><a href="/login">profile</a></li>
-        <% end %> 
+        <% end %>
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">cities
+               <span class="caret"></span></button>
+               <ul class="dropdown-menu">
+                 <li><a href="/cities/1">san francisco</a></li>
+                 <li><a href="/cities/2">seattle</a></li>
+                 <li><a href="/cities/3">los angeles</a></li>
+                 <li><a href="/cities/4">new york</a></li>
+                 <li><a href="/cities/5">denver</a></li>
+                 <li><a href="/cities/6">berlin</a></li>
+                 <li><a href="/cities/7">london</a></li>
+                 <li><a href="/cities/8">amsterdam</a></li>
+                 <li><a href="/cities/9">rome</a></li>
+                 <li><a href="/cities/10">barcelona</a></li>
+        
+               </ul>
+            </li>
+  
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if current_user %>
@@ -47,6 +66,10 @@
 </nav>
 
 <%= yield %>
+
+<%= javascript_include_tag 'application'%>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 </html>
