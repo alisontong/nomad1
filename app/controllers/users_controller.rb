@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = current_user
+    @user = User.friendly.find(params[:username])
     render :show
   end
 
@@ -40,16 +40,12 @@ class UsersController < ApplicationController
 
   private 
 
-    def set_user
-      @user = User.friendly.find(params[:id])
-    end
-
     def user_params
-      params.require(:user).permit(:name, :email, :password, :city)
+      params.require(:user).permit(:name, :email, :password, :city, :username)
     end
 
     def page_user
-      @page_user = User.find(params[:id])
+      @page_user = User.friendly.find(params[:username])
     end
     helper_method :page_user
 
