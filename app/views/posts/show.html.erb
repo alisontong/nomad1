@@ -1,9 +1,13 @@
 <div class="col-sm-4 col-sm-offset-4">
 <h1><%= @post.title %></h1>
 <hr>
-<p><%= @post.description %></p>
+<p>description: <%= @post.description %></p>
+
 
 <p><%= @post.city.name %></p>
+
+<p>city: <%= @post.city_id %></p>
+
 
 <% if current_user && current_user.posts.include?(@post) %>
   <p><%= link_to "edit post", edit_post_path(@post) %></p>
