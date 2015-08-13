@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   resources :users, except: [:show, :new, :destroy, :index]
   get '/signup', to: 'users#new'
-  get '/go/:username', to: 'users#show'
+  get '/go/:username', to: 'users#show', as: 'profile'
   
   resources :posts
   
@@ -27,7 +27,7 @@ end
 #      user PATCH  /users/:id(.:format)      users#update
 #           PUT    /users/:id(.:format)      users#update
 #    signup GET    /signup(.:format)         users#new
-#           GET    /go/:username(.:format)   users#show
+#   ™profile GET    /go/:username(.:format)   users#show
 #     posts GET    /posts(.:format)          posts#index
 #           POST   /posts(.:format)          posts#create
 #  new_post GET    /posts/new(.:format)      posts#new

@@ -4,9 +4,10 @@ class User < ActiveRecord::Base
   has_secure_password
 
   validates :name, length: { minimum: 2 }, presence: true
-  validates :bio, length: { maximum: 500 }, presence: true
+  validates :username, length: { minimum: 3 }, presence: true
   validates :password, length: { in: 6..20 }, presence: true
-  validates :registration_number, length: { is: 6 }, presence: true
+  validates :email, length: { maximum: 255 }, presence: true
+
 
   extend FriendlyId
   friendly_id :username, use: :slugged
