@@ -165,7 +165,30 @@ body > div {
   text-align: center;
 }
 
-<<<<<<< HEAD
+/*INDIVIDUAL POST */ 
+.individualpost{
+  background: url(https://ununsplash.imgix.net/photo-1433733071959-30cd185d14a8?dpr=2&fit=crop&fm=jpg&h=800&q=75&w=1050) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#inposttext {
+  background-color: rgba(42, 30, 20, 0.8);
+  color: #F2F2F2;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
 /*CITY IMAGE*/
 body > div > div > img {
   display: block;
@@ -187,7 +210,7 @@ body > div > div.container {
 
 body > div > div.container > div:nth-child(1) {
   text-align: center;
-}
+
 
 
  
