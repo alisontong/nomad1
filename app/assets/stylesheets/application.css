@@ -30,7 +30,15 @@
 .row {
   padding-right: 150px;
   padding-left: 90px;
+}
 
+/*POSTS ON HOMEPAGE*/
+body > div.container > div:nth-child(1) > h4 {
+  text-align: center; 
+}
+/*MAP ON HOMEPAGE*/
+body > div.container > div:nth-child(2) > h4 {
+  text-align: center; 
 }
 
 /*BACKGROUND IMAGE OF THE LOGIN PAGE*/
@@ -111,10 +119,49 @@ body > div > div > div > legend {
 body > div > div.col-md-12 > h1 {
   color:black;
   margin-top: 50px;
-  margin-left: 20px;
+  text-align: center;
 }
 
 #userinformation {
 }
+
+/*CITY IMAGE*/
+body > div > div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/*CITY NAME*/
+body > div > h1 {
+  text-align: center; 
+}
+
+/*POST ARE SHOWING*/
+body > div > div.container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+body > div > div.container > div:nth-child(1) {
+  text-align: center;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
