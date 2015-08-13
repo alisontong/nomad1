@@ -5,6 +5,7 @@
 </div>
 <h3>Posts about <%= @city.name %></h3>
 <br>
+<%= link_to "add new post", new_post_path %>
 <br>
   
 <% @city.posts.each do |post| %> 

@@ -34,7 +34,7 @@ class UsersController < ApplicationController
 
   def update
     current_user.update_attributes(user_params)
-    redirect_to profile_path
+    redirect_to profile_path(current_user)
   end
 
   private 

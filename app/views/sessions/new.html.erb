@@ -1,5 +1,7 @@
 <div container="loginpage">
+
 <div class="col-sm-4 col-sm-offset-4">
+  <br>
   <legend>log in to post about travels!</legend>
   <%= form_for :user, url: sessions_path do |f| %>
     <%= f.label :email %>:
@@ -9,6 +11,8 @@
     <%= f.password_field :password, class:"form-control", required: true %><br />
     <%= f.submit "log in", class:"btn btn-primary" %>
   <% end %>
+  <br>
 </div>
+
 </div>
 

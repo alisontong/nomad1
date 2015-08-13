@@ -15,7 +15,7 @@
 
   <% if current_user == page_user %>
 
-    <p><%= link_to "Edit User Profile", edit_user_path(@user) %></p>
+    <p><%= link_to "edit user profile", edit_user_path(@user) %></p>
   <% end %>
 
     <p>username: <%= @user.name %> </p>
@@ -36,7 +36,7 @@
   <% end %>
  
  
-<p><%= link_to "Add new post", new_post_path(@post) %></p>
+<p><%= link_to "add new post", new_post_path(@post) %></p>
 
 
 </div>
