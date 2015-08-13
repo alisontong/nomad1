@@ -87,7 +87,6 @@ body > div > div > div > legend {
 
 /*BACKGROUND OF THE SIGNUP FORM*/
 .signupbox {
-  font-family: sans-serif;
   background-color: rgba(42, 30, 20, 0.8);
   color: #F2F2F2;
   padding-top: 25px;
@@ -103,7 +102,7 @@ body > div > div > div > legend {
 }
 
 .profilepage {
-  background: url(http://www.unsigneddesign.com/Subtle%20Grunge%20Textures/8.jpg) no-repeat center center fixed; 
+  background: url(https://images.unsplash.com/photo-1433785124354-92116416b870?q=80&fm=jpg&s=38f06298f26c11c59024eabf3b0be3bb) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -123,6 +122,19 @@ body > div > div.col-md-12 > h1 {
 }
 
 #userinformation {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+#userposts {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
 }
 
 /*CITY IMAGE*/
@@ -148,6 +160,10 @@ body > div > div.container > div:nth-child(1) {
   text-align: center;
 }
 
+
+body > div {
+  text-align: center;
+}
 
  
 
