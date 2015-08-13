@@ -1,20 +1,24 @@
+<div class="signuppage">
 <div class="col-sm-4 col-sm-offset-4">
 <br>
+  <div class="signupbox">
   <legend>sign up to post about travels!</legend>
   <%= form_for @user do |f| %>
-    <%= f.label :name %>:
+    <%= f.label :name, "name" %>:
      <%= f.text_field :name, class:"form-control", required: true %><br />
-     <%= f.label :username %>:
+     <%= f.label :username, "username" %>:
      <%= f.text_field :username, class:"form-control", required: true %><br />
-     <%= f.label :email %>:
+     <%= f.label :email, "email" %>:
      <%= f.email_field :email, class:"form-control", required: true %><br />
 
-     <%= f.label :password %>:
+     <%= f.label :password, "password" %>:
      <%= f.password_field :password, class:"form-control", required: true %><br />
-     <%= f.label :city %> 
+     <%= f.label :city, "city" %> 
      <%= f.text_field :city, class:"form-control", required: true %><br> 
      <%= f.submit "become a member!", class:"btn btn-primary" %>
   <% end %>
   <br>
   <p>already have an account? <%= link_to "click here", login_path%> to log in.</p>
+</div>
+</div>
 </div>
