@@ -1,13 +1,15 @@
-<div container="loginpage">
+<div class="loginpage">
 
 <div class="col-sm-4 col-sm-offset-4">
   <br>
+  <div class="loginbox">
+  
   <legend>log in to post about travels!</legend>
   <%= form_for :user, url: sessions_path do |f| %>
-    <%= f.label :email %>:
+    <%= f.label :email, "email" %>:
     <%= f.email_field :email, class:"form-control", required: true %><br />
 
-    <%= f.label :password %>:
+    <%= f.label :password, "password" %>:
     <%= f.password_field :password, class:"form-control", required: true %><br />
     <%= f.submit "log in", class:"btn btn-primary" %>
   <% end %>
@@ -15,4 +17,4 @@
 </div>
 
 </div>
-
+</div>

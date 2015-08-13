@@ -14,49 +14,107 @@
  *= require_self
  */
 
-/*BACKGROUND IMAGE OF THE WHOLE SITE*/
-html { 
+ body {
+  background-color: #F2F2F2;
+  font-family: 'Oswald', sans-serif;
+ }
+
+/* HOMEPAGE*/
+.jumbotron {
+  margin-top: -20px;
+  background-color: black;
+  text-align: center; 
+  color: #F2F2F2 ;
+}
+
+.row {
+  padding-right: 150px;
+  padding-left: 90px;
+
+}
+
+/*BACKGROUND IMAGE OF THE LOGIN PAGE*/
+.loginpage { 
   background: url(https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/*BACKGROUND OF THE LOGIN FORM*/
+.loginbox {
+  font-family: sans-serif;
+  background-color: rgba(42, 30, 20, 0.8);
+  color: #F2F2F2;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  font-family: 'Oswald', sans-serif
+}
+
+/*COLOR OF LOGIN & SIGNUP*/
+body > div > div > div > legend {
+  color: #F2F2F2;
+}
+
+.signuppage { 
+  background: url(https://images.unsplash.com/photo-1429734160945-4f85244d6a5a?dpr=2&fit=crop&fm=jpg&h=700&q=80&w=1050) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 /*BACKGROUND OF THE SIGNUP FORM*/
-body > div {
+.signupbox {
   font-family: sans-serif;
-  background-color: rgba(42, 30, 20, 0.6);
+  background-color: rgba(42, 30, 20, 0.8);
   color: #F2F2F2;
-  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  font-family: 'Oswald', sans-serif
 }
 
-/*BACKGROUND OF THE LOGIN  FORM*/
-body > div > div {
-  font-family: sans-serif;
-  background-color: rgba(42, 30, 20, 0.6);
-  color: #F2F2F2;
-  margin-bottom: 30px;
-}
-
-
-body > div > legend {
+/*COLOR OF SIGNUP*/
+body > div > div > div > legend {
   color: #F2F2F2;
 }
 
-body > div > div > legend {
-  color: #F2F2F2;
+.profilepage {
+  background: url(http://www.unsigneddesign.com/Subtle%20Grunge%20Textures/8.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
+/*USER PROFILE TITLE NAME*/
+body > div > div.col-md-12 > h1 {
+  color:black;
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 #userinformation {
-  font-family: sans-serif;
-  color: black;
-  margin-bottom: 30px;
 }
 
-/*USER PROFILE TITLE NAME
-*/body > div.col-md-12 > h1 {
-  background-color: none;
-  color:black;
-}
+
