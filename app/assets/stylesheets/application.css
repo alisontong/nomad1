@@ -155,12 +155,6 @@ body > div > div.container {
   margin-right: 100px;
 }
 
-
-body > div > div.container > div:nth-child(1) {
-  text-align: center;
-}
-
-
 body > div {
   text-align: center;
 }
@@ -179,6 +173,7 @@ body > div {
   bottom: 0;
 }
 
+/*POST TEXT*/
 #inposttext {
   background-color: rgba(42, 30, 20, 0.8);
   color: #F2F2F2;
@@ -207,9 +202,54 @@ body > div > div.container {
   margin-right: 100px;
 }
 
+/*NEW POST*/ 
+.newpostpage {
+  background: url(https://images.unsplash.com/photo-1429032021766-c6a53949594f?dpr=2&fit=crop&fm=jpg&h=700&q=80&w=1050) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
-body > div > div.container > div:nth-child(1) {
-  text-align: center;
+#newpostbox {
+  background-color: rgba(42, 30, 20, 0.8);
+  color: #F2F2F2;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+/*EDIT POST*/ 
+.updatepost{
+  background: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=80&w=1050)
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#updatepostbox {
+  background-color: rgba(42, 30, 20, 0.8);
+  color: #F2F2F2;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
 
 
 
