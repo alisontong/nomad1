@@ -24,6 +24,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.friendly.find(params[:username])
+    @time = @user.created_at.to_date.to_formatted_s(:long)
   end
 
   def edit 
