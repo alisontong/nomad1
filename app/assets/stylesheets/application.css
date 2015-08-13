@@ -165,7 +165,6 @@ body > div {
   text-align: center;
 }
 
-
 /*INDIVIDUAL POST */ 
 .individualpost{
   background: url(https://ununsplash.imgix.net/photo-1433733071959-30cd185d14a8?dpr=2&fit=crop&fm=jpg&h=800&q=75&w=1050) no-repeat center center fixed; 
@@ -189,6 +188,29 @@ body > div {
   padding-bottom: 25px;
   padding-left: 25px;
 }
+
+/*CITY IMAGE*/
+body > div > div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/*CITY NAME*/
+body > div > h1 {
+  text-align: center; 
+}
+
+/*POST ARE SHOWING*/
+body > div > div.container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+body > div > div.container > div:nth-child(1) {
+  text-align: center;
+
 
 
  

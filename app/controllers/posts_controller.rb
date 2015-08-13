@@ -57,9 +57,9 @@ class PostsController < ApplicationController
       post.destroy
 
 
-      redirect_to user_path(current_user)
+      redirect_to profile_path(current_user)
     else
-      redirect_to user_path(current_user)
+      redirect_to profile_path(current_user)
     end
   end
 
