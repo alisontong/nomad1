@@ -1,23 +1,31 @@
-<div>
 
-  <%= image_tag @city.image, size: "1000x200" %>
-  <h1><%= @city.name %> </h1>
-</div>
-<h3>Posts about <%= @city.name %></h3>
-<br>
-<%= link_to "add new post", new_post_path %>
-<br>
-  
-<% @city.posts.each do |post| %> 
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-6">
 
-      <br>
- <%= link_to post.title, post_path(post) %>
-    </div>
+<div class="citypage">
+
+  <div class="cityimage">
+    <%= image_tag @city.image, size: "1000x200" %>
+    
   </div>
- <% end  %>
+
+  <h1><%= @city.name %> </h1>
+
+  <div class="container">
+   <div class="col-sm-6">
+      <h3>posts about <%= @city.name %></h3>
+      <% @city.posts.each do |post| %> 
+        <%= link_to post.title, post_path(post) %>
+    </div>
+      
+   <% end  %>
+    
+    <div class="col-sm-6">
+      <h3><%= link_to "add new post", new_post_path %></h3> 
+    </div>
+
+
+
+  </div>
+
+</div>
 
 
