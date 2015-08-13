@@ -1,5 +1,6 @@
-<div class ="profilepage"
-<!-- PROFILE HEADER-->
+
+<div class ="profilepage">
+
 <div class="col-md-12">
 
  <h1> <%= @user.name %>'s page</h1>
@@ -31,7 +32,7 @@
 
 <!-- USER POSTS -->
  <div class="col-md-8">
-  
+  <div id="userposts">
   <h3>my posts</h3>
   <% @user.posts.each do |post| %>
     <p>
@@ -40,7 +41,8 @@
   <% end %>
  
  
-<p><%= link_to "add new post", new_post_path(@post) %></p>
+<h3><%= link_to "add new post", new_post_path(@post) %></h3>
+</div>
 
 
 </div>

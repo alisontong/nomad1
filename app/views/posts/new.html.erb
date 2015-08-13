@@ -1,4 +1,7 @@
+<div class="newpostpage">
+
 <div class="col-sm-4 col-sm-offset-4">
+<div id="newpostbox">
 <h1>new post</h1>
 <%= form_for @post, :html => {:id => "new_post"} do |f| %>
   <%= f.label :title %>:
@@ -14,7 +17,10 @@
    <%= f.submit "save post", class:"btn btn-primary" %>
 <% end %>
   <br>
+  </div>
 <div>
+
+</div>
 
 
 

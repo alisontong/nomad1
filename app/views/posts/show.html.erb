@@ -1,11 +1,23 @@
+<div class="individualpost">
+
 <div class="col-sm-4 col-sm-offset-4">
+
+<div id="inposttext">
 <h1><%= @post.title %></h1>
 <hr>
-<p><%= @post.description %></p>
+<p>description: <%= @post.description %></p>
 
+
+<p>city: <%= @post.city.name %></p>
+
+<!-- <p>city: <%= @post.city_id %></p> -->
+
+<<<<<<< HEAD
 <p><%= @post.city.name %></p>
 
 <%= @post.id %>
+=======
+>>>>>>> 667b23984ca12239bf1333486591e83eda0cc4de
 
 <% if current_user && current_user.posts.include?(@post) %>
   <p><%= link_to "edit post", edit_post_path(@post) %></p>
@@ -49,6 +61,8 @@
        <% end  %>
      </div>
   </section>
+</div>
+</div>
 </div>
 </div>
    

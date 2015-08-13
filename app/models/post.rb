@@ -4,7 +4,6 @@ class Post < ActiveRecord::Base
 
   has_many :comments, dependent: :destroy
 
-  
   validates :title, length: { minimum: 2, maximum: 255 }, presence: true
   validates :description, length: { minimum: 3, maximum: 255 }, presence: true
   # extend FriendlyId
