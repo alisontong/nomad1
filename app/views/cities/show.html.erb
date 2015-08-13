@@ -7,16 +7,16 @@
 <br>
 <br>
   
-<% @city.posts.each do |p| %> 
+<% @city.posts.each do |post| %> 
   <div class="row">
     <div class="col-md-3">
     </div>
     <div class="col-md-6">
       Author: <%= p.user.name %>
       <br>
-      Title: <%= p.title %>
-      <br>
-      <%= p.description %>
+ <%= link_to post.title, post_path(post) %>
     </div>
   </div>
-  <% end  %>
+ <% end  %>
+
+
