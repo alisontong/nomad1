@@ -5,6 +5,7 @@
 </div>
 <h3>Posts about <%= @city.name %></h3>
 <br>
+<%= link_to "add new post", new_post_path %>
 <br>
   
 <% @city.posts.each do |post| %> 
@@ -12,7 +13,7 @@
     <div class="col-md-3">
     </div>
     <div class="col-md-6">
-      Author: <%= p.user.name %>
+      
       <br>
  <%= link_to post.title, post_path(post) %>
     </div>
