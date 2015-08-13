@@ -3,7 +3,7 @@
 <div class="col-sm-4 col-sm-offset-4">
   <br>
   <legend>log in to post about travels!</legend>
-  <%= form_for :user, url: sessions_path do |f| %>
+  <%= form_for :user, url: sessions_path, :html => {:id => "new_login"} do |f| %>
     <%= f.label :email %>:
     <%= f.email_field :email, class:"form-control", required: true %><br />
 

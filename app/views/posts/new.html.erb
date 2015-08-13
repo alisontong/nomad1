@@ -1,6 +1,6 @@
 <div class="col-sm-4 col-sm-offset-4">
 <h1>new post</h1>
-<%= form_for @post do |f| %>
+<%= form_for @post, :html => {:id => "new_post"} do |f| %>
   <%= f.label :title %>:
      <%= f.text_field :title, class:"form-control", required: true %><br />
      <%= f.label :descripton %>:
