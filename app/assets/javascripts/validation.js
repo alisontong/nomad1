@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $("#new_user").validate({
-      debug: true,
       rules: {
         "user[name]": {
           required: true, 
@@ -44,7 +43,6 @@ $(document).ready(function () {
     });
 
   $("#new_login").validate({
-      debug: true,
       rules: {
         "user[email]": {
           required: true, 
@@ -68,7 +66,6 @@ $(document).ready(function () {
     });
 
   $("#new_post").validate({
-      debug: true,
       rules: {
         "post[title]": {
           required: true,
@@ -92,5 +89,6 @@ $(document).ready(function () {
           minlength: "Your body must be at least 2 characters",
           maxlength: "Your body must be shorter than 255 characters"
         }
+      }
     });
 });

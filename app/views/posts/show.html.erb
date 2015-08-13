@@ -5,12 +5,51 @@
 
 <p><%= @post.city.name %></p>
 
+<%= @post.id %>
+
 <% if current_user && current_user.posts.include?(@post) %>
   <p><%= link_to "edit post", edit_post_path(@post) %></p>
   <p><%= link_to "delete", post_path, method: :delete %></p>
-  
-
 <% end %>
+<br>
+<br>
+<%= form_for [@post, @comment], :html => {:id => "new_comment"} do |f| %>
+     <%= f.label "comment" %>:
+     <%= f.text_field :description, class:"form-control", required: true %>
+     <br>
+     <%= f.submit "save post", class:"btn btn-primary" %>
+<% end %>
+<br />
+<div class="container">
+<div class="row">
+ <div class="col-md-6">
+   <h2 class="page-header">comments</h2>
+   <section class="comment-list">
+   <% @post.comments.each do |comment| %> 
+     <div class="row">
+       <div class="col-md-2 col-sm-2 hidden-xs">
+         <figure class="thumbnail">
+           <figcaption class="text-center"><%= comment.user.name %></figcaption>
+         </figure>
+       </div>
+       <div class="col-md-10 col-sm-10">
+         <div class="panel panel-default arrow left">
+           <div class="panel-body">
+             <header class="text-left">
+               <time class="comment-date" datetime="16-12-2014 01:05"><i class="fa fa-clock-o"></i> Dec 16, 2014</time>
+             </header>
+             <div class="comment-post">
+               <p>
+               <%= comment.description %>
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+       <% end  %>
+     </div>
+  </section>
+</div>
 </div>
    
 

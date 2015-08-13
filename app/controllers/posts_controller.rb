@@ -10,7 +10,7 @@ class PostsController < ApplicationController
       post = current_user.posts.create(post_params)
       if post.save 
         # if the post saves redirect to the post path with the new post
-        redirect_to post_path(post)
+        redirect_to profile_path(current_user)
       else 
         flash[:error] = "Something went wrong, please try again"
       end
@@ -27,6 +27,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comment = Comment.new
     render :show
   end 
 
@@ -62,8 +63,6 @@ class PostsController < ApplicationController
       redirect_to user_path(current_user)
     end
   end
-
- 
 
   private
     def post_params
