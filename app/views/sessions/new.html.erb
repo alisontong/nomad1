@@ -5,7 +5,8 @@
   <div class="loginbox">
   
   <legend>log in to post about travels!</legend>
-  <%= form_for :user, url: sessions_path do |f| %>
+
+  <%= form_for :user, url: sessions_path, :html => {:id => "new_login"} do |f| %>
     <%= f.label :email, "email" %>:
     <%= f.email_field :email, class:"form-control", required: true %><br />
 
