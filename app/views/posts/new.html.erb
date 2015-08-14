@@ -11,6 +11,9 @@
 
    <%= f.label :city_id %>
    <%= f.select :city_id, options_from_collection_for_select(City.all, "id", "name") %>
+   <br>
+   <%= f.label :tag_list, "Tags" %>
+   <%= f.text_field :tag_list, class:"form-control" %>
   
   <br>
   <br>
@@ -18,6 +21,7 @@
 <% end %>
   <br>
   </div>
+
 <div>
 
 </div>

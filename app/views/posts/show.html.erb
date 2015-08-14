@@ -33,6 +33,7 @@
 
         <br>
 
+
         <!-- COMMENTS ARE APPENDING -->
         <h2 class="page-header">comments</h2>
           <section class="comment-list">
@@ -48,5 +49,9 @@
 
     </div>       
   </div>
-</div>
+
+  Tags: <% tag_cloud @post.tag_counts, %w{s m l} do |tag, css_class| %>
+              <%= link_to tag.name, tag_path(tag.id), class: css_class %>
+
+
 
