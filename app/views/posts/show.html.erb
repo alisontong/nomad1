@@ -10,6 +10,7 @@
         <p>city: <%= @post.city.name %></p>
         <p>tags: <% tag_cloud @post.tag_counts, %w{s m l} do |tag, css_class| %>
         <%= link_to tag.name, tag_path(tag.id), class: css_class %></p>
+        <% end %>
         <!-- ONLY CAN EDIT IF CURRENT USER -->
         <% if current_user && current_user.posts.include?(@post) %>
           <p><%= link_to "edit post", edit_post_path(@post) %></p>
@@ -27,10 +28,10 @@
       <div id="addcommenttopost">
         <!-- FORM TO ADD COMMENT -->
         <%= form_for [@post, @comment], :html => {:id => "new_comment"} do |f| %>
-         <%= f.label " thoughts? add a comment." %>:
+         <h3><%= f.label " thoughts? add a comment." %> </h3>
          <%= f.text_field :description, class:"form-control", required: true %>
          <br>
-         <%= f.submit "save post", class:"btn btn-primary" %>
+         <%= f.submit "save your thought", class:"btn btn-primary" %>
         <% end %>
 
         <br>
@@ -54,5 +55,5 @@
 
   
 
-<% end %>
+
 
