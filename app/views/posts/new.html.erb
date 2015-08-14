@@ -4,15 +4,16 @@
 <div id="newpostbox">
 <h1>new post</h1>
 <%= form_for @post, :html => {:id => "new_post"} do |f| %>
-  <%= f.label :title %>:
+  <%= f.label :title, "title" %>:
      <%= f.text_field :title, class:"form-control", required: true %><br />
-     <%= f.label :descripton %>:
+     <%= f.label :descripton, "description" %>:
      <%= f.text_field :description, class:"form-control", required: true %><br />
   
-   <%= f.label :tag_list, "Tags" %>
+   <%= f.label :tag_list, "tags" %>
    <%= f.text_field :tag_list, class:"form-control" %>
     <br>
-   <%= f.label :city_id %>
+   <%= f.label :city_id, "city" %>
+   <br>
    <%= f.select :city_id, options_from_collection_for_select(City.all, "id", "name") %>
   
   <br>

@@ -19,9 +19,13 @@
   font-family: 'Oswald', sans-serif;
  }
 
+.navbar {
+  margin-bottom: -20px;
+}
+
 /* HOMEPAGE*/
 .jumbotron {
-  margin-top: -20px;
+  margin-top: -30px;
   background-color: black;
   text-align: center; 
   color: #F2F2F2 ;
@@ -48,8 +52,9 @@ body > div.container > div:nth-child(2) > h4 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -78,8 +83,9 @@ body > div > div > div > legend {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -107,8 +113,9 @@ body > div > div > div > legend {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -166,8 +173,9 @@ body > div {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -217,8 +225,9 @@ body > div > div.container {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -241,8 +250,9 @@ body > div > div.container {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -264,8 +274,9 @@ body > div > div.container {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -286,15 +297,16 @@ body > div > div.container {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+   height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
 
 }
 
-
+ 
 
  
 
