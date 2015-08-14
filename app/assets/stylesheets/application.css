@@ -303,9 +303,30 @@ body > div > div.container {
   right: 0;
   left: 0;
   bottom: 0;
-
 }
 
+.updatepost {
+  background: url(https://unsplash.imgix.net/photo-1430760814266-9c81759e5e55?dpr=2&fit=crop&fm=jpg&h=750&q=75&w=1050) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+   height: 800px;
+  top: 20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#updatedbox {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
  
 
  
