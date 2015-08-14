@@ -161,7 +161,7 @@ body > div {
 
 /*INDIVIDUAL POST */ 
 .individualpost{
-  background: url(https://ununsplash.imgix.net/photo-1433733071959-30cd185d14a8?dpr=2&fit=crop&fm=jpg&h=800&q=75&w=1050) no-repeat center center fixed; 
+  background: url(https://images.unsplash.com/photo-1428677361686-f9d23be145c9?dpr=2&fit=crop&fm=jpg&h=700&q=80&w=1050) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -175,8 +175,16 @@ body > div {
 
 /*POST TEXT*/
 #inposttext {
-  background-color: rgba(42, 30, 20, 0.8);
-  color: #F2F2F2;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+#addcommenttopost {
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 50px;
   padding-top: 25px;
   padding-right: 25px;

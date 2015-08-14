@@ -12,7 +12,7 @@
       <div class="col-sm-6">
         <h3>posts about <%= @city.name %></h3>
         <% @city.posts.each do |post| %> 
-        <p><%= link_to post.title, post_path(post) %></p>
+        <hr><p><%= link_to post.title, post_path(post) %></p> 
          <% end  %>
       </div>
     </div>

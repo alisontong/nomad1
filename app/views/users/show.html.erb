@@ -7,7 +7,6 @@
 
 </div>
 
-
 <!-- USER INFO -->
 
 <div class="container">
@@ -18,14 +17,14 @@
   <div id ="userinformation">
   <h3>my information</h3>
 
-  <% if current_user == page_user %>
+  <p>username: <%= @user.name %> </p>
+  <p>current city: <%= @user.city %> </p>
+  <p>data joined: <%= @time %> </p>
+    <% if current_user == page_user %>
 
-    <p><%= link_to "edit user profile", edit_user_path(@user) %></p>
-  <% end %>
-
-    <p>username: <%= @user.name %> </p>
-    <p>current city: <%= @user.city %> </p>
-    <p>data joined: <%= @time %> </p>
+    <h4><%= link_to "edit user profile", edit_user_path(@user) %></h4>
+    <% end %>
+    <h4><%= link_to "add new post", new_post_path(@post) %></h4>
   </div>
 
 </div>
@@ -41,7 +40,7 @@
   <% end %>
  
  
-<h3><%= link_to "add new post", new_post_path(@post) %></h3>
+
 </div>
 
 
