@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+  
+  @tags = Post.tag_counts_on(:tags)
+
   def index
     @posts = Post.all
     render :index
@@ -28,7 +31,9 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @comment = Comment.new
+   
     render :show
+
   end 
 
 
@@ -66,7 +71,7 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:title, :description, :city_id)
-    end
+      params.require(:post).permit(:title, :description, :city_id, :tag_list)
+  end
 
 end

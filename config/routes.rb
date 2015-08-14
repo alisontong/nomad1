@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # Route to
   root 'cities#index'
 
@@ -16,6 +17,8 @@ Rails.application.routes.draw do
   
   resources :cities, only: [:index]
   get "/:name", to: "cities#show"
+
+  resources :tag
 
   
 

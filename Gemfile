@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 # Amazon Web Services
+
+gem 'acts-as-taggable-on'
 gem 'aws-sdk'
 
 # Friendly id for urls
