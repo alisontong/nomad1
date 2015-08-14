@@ -236,8 +236,7 @@ body > div > div.container {
 
 /*EDIT POST*/ 
 .updatepost{
-  background: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=80&w=1050)
-  no-repeat center center fixed; 
+  background: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=80&w=1050) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -257,6 +256,42 @@ body > div > div.container {
   padding-right: 25px;
   padding-bottom: 25px;
   padding-left: 25px;
+}
+
+.tagpage {
+  background: url(https://unsplash.imgix.net/photo-1415200358018-bb07fced3660?dpr=2&fit=crop&fm=jpg&h=700&q=75&w=1050) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#taggedposts {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+.citypage {
+  background: url(http://www.unsigneddesign.com/Subtle%20Grunge%20Small/15.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
 }
 
 

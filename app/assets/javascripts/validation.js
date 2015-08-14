@@ -22,22 +22,22 @@ $(document).ready(function () {
       },
       messages: {
             "user[name]": {
-              required: "Please enter your name",
-              maxlength: "Name must be shorter than 255 characters"
+              required: "please enter your name",
+              maxlength: "name must be shorter than 255 characters"
             },
             "user[username]": {
-              required: "Please enter a username",
-              minlength: "Username must be longer than 2 characters",
-              maxlength: "Username must be shorter than 25 characters"
+              required: "please enter a username",
+              minlength: "username must be longer than 2 characters",
+              maxlength: "username must be shorter than 25 characters"
             },
             "user[email]": {
-              required: "Please enter an email",
-              email: "Please enter a valid email"
+              required: "please enter an email",
+              email: "please enter a valid email"
             },
             "user[password]": {
-              required: "Please enter a password",
-              minlength: "Your password must be at least 6 characters",
-              maxlength: "Your password must be shorter than 30 characters"
+              required: "please enter a password",
+              minlength: "your password must be at least 6 characters",
+              maxlength: "your password must be shorter than 30 characters"
             }
           }
     });
@@ -55,12 +55,12 @@ $(document).ready(function () {
       },
       messages: {
         "user[email]": {
-          required: "Please enter an email",
-          email: "Please enter a valid email"
+          required: "please enter an email",
+          email: "please enter a valid email"
         },
         "user[password]": {
-          required: "Please enter a password",
-          minlength: "Your password must be at least 6 characters"
+          required: "please enter a password",
+          minlength: "your password must be at least 6 characters"
         }
       }
     });
@@ -80,14 +80,14 @@ $(document).ready(function () {
       },
       messages: {
         "post[title]": {
-          required: "Please enter a title",
-          minlength: "Your title must be at least 2 characters",
-          maxlength: "Your title must be shorter than 200 characters"
+          required: "please enter a title",
+          minlength: "your title must be at least 2 characters",
+          maxlength: "your title must be shorter than 200 characters"
         },
         "post[body]": {
-          required: "Please enter a body",
-          minlength: "Your body must be at least 2 characters",
-          maxlength: "Your body must be shorter than 255 characters"
+          required: "please enter a body",
+          minlength: "your body must be at least 2 characters",
+          maxlength: "your body must be shorter than 255 characters"
         }
       }
     });

@@ -1,19 +1,28 @@
-<h1>Posts Tagged as <%= @tag.name %></h1>
 
+<div class="tagpage">
+  <div class="col-sm-4 col-sm-offset-4">
+
+  <div id="taggedposts">
+<h1>posts tagged as <%= @tag.name %></h1>
+<hr>
 <% if @posts.count > 0 %>
 
-  <ul>
 
+  
   <% @posts.each do |post| %>
 
-    <li><%= link_to post.title, post_path(post) %></li>
+    <p><%= link_to post.title, post_path(post) %></p>
 
   <% end %>
 
-  </ul>
+
 
 <% else %>
 
-  <p>This tag is not associated with any posts.</p>
+  <p>this tag is not associated with any posts.</p>
 
 <% end %>
+</div>
+
+</div>
+</div>
