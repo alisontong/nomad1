@@ -12,11 +12,12 @@
       <div class="col-sm-6">
         <h3>posts about <%= @city.name %></h3>
         <% @city.posts.each do |post| %> 
-        <%= link_to post.title, post_path(post) %>
+        <hr><p><%= link_to post.title, post_path(post) %></p> 
+         <% end  %>
       </div>
     </div>
       
-    <% end  %>
+   
     
     <div class="col-sm-6">
       <h3><%= link_to "add new post", new_post_path %></h3> 

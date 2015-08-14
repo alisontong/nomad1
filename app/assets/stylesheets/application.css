@@ -19,9 +19,13 @@
   font-family: 'Oswald', sans-serif;
  }
 
+.navbar {
+  margin-bottom: -20px;
+}
+
 /* HOMEPAGE*/
 .jumbotron {
-  margin-top: -20px;
+  margin-top: -30px;
   background-color: black;
   text-align: center; 
   color: #F2F2F2 ;
@@ -48,8 +52,9 @@ body > div.container > div:nth-child(2) > h4 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -78,8 +83,9 @@ body > div > div > div > legend {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -107,8 +113,9 @@ body > div > div > div > legend {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -161,13 +168,14 @@ body > div {
 
 /*INDIVIDUAL POST */ 
 .individualpost{
-  background: url(https://ununsplash.imgix.net/photo-1433733071959-30cd185d14a8?dpr=2&fit=crop&fm=jpg&h=800&q=75&w=1050) no-repeat center center fixed; 
+  background: url(https://images.unsplash.com/photo-1428677361686-f9d23be145c9?dpr=2&fit=crop&fm=jpg&h=700&q=80&w=1050) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -175,8 +183,16 @@ body > div {
 
 /*POST TEXT*/
 #inposttext {
-  background-color: rgba(42, 30, 20, 0.8);
-  color: #F2F2F2;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+#addcommenttopost {
+  background-color: rgba(255, 255, 255, 0.7);
   margin-top: 50px;
   padding-top: 25px;
   padding-right: 25px;
@@ -209,8 +225,9 @@ body > div > div.container {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -228,14 +245,14 @@ body > div > div.container {
 
 /*EDIT POST*/ 
 .updatepost{
-  background: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=80&w=1050)
-  no-repeat center center fixed; 
+  background: url(https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?dpr=2&fit=crop&fm=jpg&h=725&q=80&w=1050) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  height: 800px;
+  top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -251,7 +268,45 @@ body > div > div.container {
   padding-left: 25px;
 }
 
+.tagpage {
+  background: url(https://unsplash.imgix.net/photo-1415200358018-bb07fced3660?dpr=2&fit=crop&fm=jpg&h=700&q=75&w=1050) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 800px;
+  top: 20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
+#taggedposts {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+.citypage {
+  background: url(http://www.unsigneddesign.com/Subtle%20Grunge%20Small/15.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+   height: 800px;
+  top: 20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+}
+
+ 
 
  
 
