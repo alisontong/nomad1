@@ -8,12 +8,12 @@
      <%= f.text_field :title, class:"form-control", required: true %><br />
      <%= f.label :descripton %>:
      <%= f.text_field :description, class:"form-control", required: true %><br />
-
-   <%= f.label :city_id %>
-   <%= f.select :city_id, options_from_collection_for_select(City.all, "id", "name") %>
-   <br>
+  
    <%= f.label :tag_list, "Tags" %>
    <%= f.text_field :tag_list, class:"form-control" %>
+    <br>
+   <%= f.label :city_id %>
+   <%= f.select :city_id, options_from_collection_for_select(City.all, "id", "name") %>
   
   <br>
   <br>

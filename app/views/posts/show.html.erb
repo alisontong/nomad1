@@ -8,6 +8,8 @@
         <hr>
         <p>description: <%= @post.description %></p>
         <p>city: <%= @post.city.name %></p>
+        <p>tags: <% tag_cloud @post.tag_counts, %w{s m l} do |tag, css_class| %>
+        <%= link_to tag.name, tag_path(tag.id), class: css_class %></p>
         <!-- ONLY CAN EDIT IF CURRENT USER -->
         <% if current_user && current_user.posts.include?(@post) %>
           <p><%= link_to "edit post", edit_post_path(@post) %></p>
@@ -50,8 +52,7 @@
     </div>       
   </div>
 
-  Tags: <% tag_cloud @post.tag_counts, %w{s m l} do |tag, css_class| %>
-              <%= link_to tag.name, tag_path(tag.id), class: css_class %>
+  
 
-
+<% end %>
 
